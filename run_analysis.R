@@ -7,7 +7,7 @@ subjectTrain <- read.table("subject_train.txt")
 xtrain <- read.table("X_train.txt")
 ytrain <- read.table("y_train.txt")
 
-## Add descriptie variable names to the data sets
+## Add descriptive variable names to the data sets
 colnames(subjectTest) <- "subject"
 colnames(xtest) <- gsub("-","",sub("\\()","",features$V2))
 colnames(ytest) <- "activityCode"
@@ -15,7 +15,7 @@ colnames(subjectTrain) <- "subject"
 colnames(xtrain) <- gsub("-","",sub("\\()","",features$V2))
 colnames(ytrain) <- "activityCode"
 
-## Add descriptie activity names/labels to the activity data sets
+## Add descriptive activity names/labels to the activity data sets
 ytest$activityLabel <- ifelse(ytest$activityCode==1,"WALKING",ifelse(ytest$activityCode==2,"WALKING_UPSTAIRS",ifelse(ytest$activityCode==3,"WALKING_DOWNSTAIRS",ifelse(ytest$activityCode==4,"SITTING",ifelse(ytest$activityCode==5,"STANDING",ifelse(ytest$activityCode==6,"LAYING","UNKNOWN"))))))
 ytrain$activityLabel <- ifelse(ytrain$activityCode==1,"WALKING",ifelse(ytrain$activityCode==2,"WALKING_UPSTAIRS",ifelse(ytrain$activityCode==3,"WALKING_DOWNSTAIRS",ifelse(ytrain$activityCode==4,"SITTING",ifelse(ytrain$activityCode==5,"STANDING",ifelse(ytrain$activityCode==6,"LAYING","UNKNOWN"))))))
 
@@ -30,7 +30,7 @@ dfcombined <- rbind(dftest,dftrain)
 
 ## Extract only measurements for mean and standard deviation, include subject and activityLabel columns
 dfcombined <- dfcombined[,grepl("subject|activityLabel|mean|std",names(dfcombined))]
-dfcombined <- dfcombined[,!grepl("meanFreq",names(dfcombined))] ## Exclude variable names that contain getwd("meanFreq"
+dfcombined <- dfcombined[,!grepl("meanFreq",names(dfcombined))] ## Exclude variable names that contain "meanFreq"
 colnames(dfcombined) <- gsub("mean","Mean",names(dfcombined)) ## Uppercase "M" in "mean" on variable names to make it more readable
 colnames(dfcombined) <- gsub("std","Std",names(dfcombined)) ## Uppercase "S" in "std" on variable names to make it more readable
 
