@@ -1,5 +1,5 @@
 Code Description
-===
+=================
 Read in required test and train data sets
 Add descriptive variable names to the data sets
 Add descriptive activity names/labels to the activity data sets
@@ -10,16 +10,23 @@ Exclude variable names that contain "meanFreq"
 Create tidy data frame that calculates mean for each variable (.) for unique combinations of subject and activityLabel
 Export tidy data frame into text file
 
-Data Files:
+### Data Files
 features.txt
+
 subject_test.txt
+
 X_test.txt
+
 y_test.txt
+
 subject_train.txt
+
 X_train.txt
+
 y_train.txt
 
-Tidy Data Variables:
+
+### Tidy Data Variables
 subject
 activityLabel
 tBodyAccMeanX
