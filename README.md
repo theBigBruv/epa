@@ -2,39 +2,40 @@ Code Description
 =================
 At a high level, the R script performed the tasks below:
 
-Read in required test and train data sets
+1. Reads in required test and train data sets
 
-Add descriptive variable names to the data sets
+2. Adds descriptive variable names (representing features) to the data sets
 
-Add descriptive activity names/labels to the activity data sets
+3. Adds descriptive activity names/labels to the activity data sets
 
-Create test and train data frames
+4. Creates test and train data frames by column-binding the separate data sets
 
-Order (by activityLabel and subject) and Merge test and train data frames into a single data frame
+5. Orders (by activityLabel and subject) and Merges test and train data frames into a single data frame
 
-Extract only measurements for mean and standard deviation, include subject and activityLabel columns
+6. Extracts only measurements/variables for mean and standard deviation
 
-Exclude variable names that contain "meanFreq"
+7. Creates a tidy data frame that calculates mean for each variable, for unique combinations of subject and activityLabel
 
-Create tidy data frame that calculates mean for each variable (.) for unique combinations of subject and activityLabel
-
-Export tidy data frame into text file
+8. Exports tidy data frame into text file
 
 ### Raw Data Files
 The raw data files used for this analysis are listed below:
-features.txt
 
-subject_test.txt
+1. features.txt
 
-X_test.txt
+2. activity_labels.txt
 
-y_test.txt
+3. subject_test.txt
 
-subject_train.txt
+4. X_test.txt
 
-X_train.txt
+5. y_test.txt
 
-y_train.txt
+6. subject_train.txt
+
+7. X_train.txt
+
+8. y_train.txt
 
 ### Tidy Data Variables
 The final tidy data set contains 180 observations across 68 variables. The variables are listed below:
