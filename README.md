@@ -1,5 +1,7 @@
 Code Description
 =================
+At a high level, the R script performed the tasks below:
+
 Read in required test and train data sets
 
 Add descriptive variable names to the data sets
@@ -18,7 +20,8 @@ Create tidy data frame that calculates mean for each variable (.) for unique com
 
 Export tidy data frame into text file
 
-### Data Files
+### Raw Data Files
+The raw data files used for this analysis are listed below:
 features.txt
 
 subject_test.txt
@@ -34,6 +37,8 @@ X_train.txt
 y_train.txt
 
 ### Tidy Data Variables
+The final tidy data set contains 180 observations across 68 variables. The variables are listed below:
+
 subject
 
 activityLabel
