@@ -1,6 +1,6 @@
 Code Description
 =================
-At a high level, the R script performed the tasks below:
+At a high level, the R script performs the tasks below:
 
 1. Reads in required test and train data sets
 
