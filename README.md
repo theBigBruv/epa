@@ -12,25 +12,23 @@ Export tidy data frame into text file
 
 ### Data Files
 features.txt
-
 subject_test.txt
-
 X_test.txt
-
 y_test.txt
-
 subject_train.txt
-
 X_train.txt
-
 y_train.txt
-
 
 ### Tidy Data Variables
 subject
+
 activityLabel
+
 tBodyAccMeanX
-tBodyAccMeanY"            "tBodyAccMeanZ"           
+
+tBodyAccMeanY
+
+tBodyAccMeanZ"           
  [6] "tBodyAccStdX"             "tBodyAccStdY"             "tBodyAccStdZ"             "tGravityAccMeanX"         "tGravityAccMeanY"        
 [11] "tGravityAccMeanZ"         "tGravityAccStdX"          "tGravityAccStdY"          "tGravityAccStdZ"          "tBodyAccJerkMeanX"       
 [16] "tBodyAccJerkMeanY"        "tBodyAccJerkMeanZ"        "tBodyAccJerkStdX"         "tBodyAccJerkStdY"         "tBodyAccJerkStdZ"        
