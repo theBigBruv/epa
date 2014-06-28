@@ -1,9 +1,11 @@
 Columns Description
 =================
 
-subject
+subject: Integer from 1 to 30 indicating which subject the measurements were taken for
 
-activityLabel
+activityLabel: one of six activities, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+The columns below show averages for each measurement for the specific subject and activity:
 
 tBodyAccMeanX
 
@@ -19,7 +21,7 @@ tBodyAccStdZ
 
 tGravityAccMeanX
 
-tGravityAccMeanY  
+tGravityAccMeanY
 
 tGravityAccMeanZ
 
@@ -29,7 +31,7 @@ tGravityAccStdY
 
 tGravityAccStdZ
 
-tBodyAccJerkMeanX 
+tBodyAccJerkMeanX
 
 tBodyAccJerkMeanY
 
@@ -39,7 +41,7 @@ tBodyAccJerkStdX
 
 tBodyAccJerkStdY
 
-tBodyAccJerkStdZ      
+tBodyAccJerkStdZ     
 
 tBodyGyroMeanX
 
@@ -49,7 +51,7 @@ tBodyGyroMeanZ
 
 tBodyGyroStdX
 
-tBodyGyroStdY     
+tBodyGyroStdY  
 
 tBodyGyroStdZ
 
@@ -59,7 +61,7 @@ tBodyGyroJerkMeanY
 
 tBodyGyroJerkMeanZ
 
-tBodyGyroJerkStdX  
+tBodyGyroJerkStdX 
 
 tBodyGyroJerkStdY
 
